@@ -1,6 +1,6 @@
 corr <- function(directory, threshold)
 {
-  files <- list.files(path="/Users/saidhalli/Downloads/specdata", pattern="*.csv", full.names=T, recursive=FALSE)
+  files <- list.files(path=c(directory), pattern="*.csv", full.names=T, recursive=FALSE)
   corrs<-NULL
   for(f in files)
   {
